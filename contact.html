@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZaylaStudio — Contact | Get In Touch</title>
+    <meta name="description" content="Contact Zaylore Studio. Connect with us for streetwear, collaborations, and inquiries.">
+    <link rel="icon" href="img/logo-icon-sm.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ===== CONTACT PAGE STYLES ===== */
+        .contact-page { overflow-x: hidden; }
+
+        /* --- Nav --- */
+        .nav {
+            position: fixed; top:0; left:0; width:100%;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 18px 40px;
+            z-index: 100;
+            background: linear-gradient(180deg, rgba(10,10,10,0.95) 0%, transparent 100%);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            will-change: background, box-shadow;
+        }
+        .nav-brand {
+            display: flex; align-items: center; gap: 10px;
+            text-decoration: none;
+        }
+        .nav-logo {
+            width: 40px; height: 40px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 1px solid rgba(212,25,32,0.3);
+            box-shadow: 0 0 15px rgba(212,25,32,0.2);
+        }
+        .nav-brand-text {
+            font-family: 'Anton', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            color: #e8e8e8;
+            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0,0,0,0.5);
+        }
+        .nav-center {
+            display: flex; gap: 32px;
+        }
+        .nav-center a {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #777;
+            position: relative;
+            padding-bottom: 4px;
+            transition: color 0.3s;
+        }
+        .nav-center a::after {
+            content: '';
+            position: absolute; bottom: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 0; height: 2px;
+            background: #d41920;
+            box-shadow: 0 0 8px rgba(212,25,32,0.35);
+            transition: width 0.3s;
+        }
+        .nav-center a:hover { color: #e8e8e8; }
+        .nav-center a:hover::after { width: 100%; }
+        .nav-center a.active { color: #d41920; }
+        .nav-center a.active::after { width: 100%; }
+        .nav-cta {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #d41920;
+            border: 1px solid #d41920;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .nav-cta:hover {
+            background: #d41920;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(212,25,32,0.35);
+        }
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 101;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 2px;
+            background-color: #e8e8e8;
+            transition: all 0.3s;
+        }
+        .mobile-cta { display: none; }
+
+        /* --- Header --- */
+        .contact-header {
+            position: relative;
+            padding: 160px 40px 60px;
+            text-align: center;
+            z-index: 2;
+        }
+        .contact-title {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(4rem, 8vw, 6rem);
+            line-height: 1;
+            color: #ffffff;
+            margin-bottom: 16px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s ease forwards;
+            text-shadow: 
+                0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa,
+                0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(212,25,32,.2), 0 1px 3px rgba(212,25,32,.4),
+                0 3px 5px rgba(212,25,32,.3), 0 5px 10px rgba(212,25,32,.3), 0 10px 10px rgba(212,25,32,.2),
+                0 20px 20px rgba(212,25,32,.15);
+        }
+        .contact-subtitle {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 6px;
+            color: #d41920;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeUp 1s ease 0.3s forwards;
+            text-shadow: 0 1px 0 #900, 0 2px 0 #700, 0 3px 0 #500, 0 4px 10px rgba(212,25,32,0.4);
+        }
+
+        /* --- Contact Content --- */
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 40px 100px;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeUp 1s ease 0.5s forwards;
+        }
+        
+        .contact-brand {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .contact-brand-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(212,25,32,0.2);
+            filter: grayscale(10%) contrast(1.1);
+        }
+
+        .contact-brand-quote {
+            font-family: 'Anton', sans-serif;
+            font-size: 2.5rem;
+            color: #d41920;
+            line-height: 1.1;
+            letter-spacing: 3px;
+            text-shadow: 0 1px 0 #900, 0 2px 0 #700, 0 3px 5px rgba(212,25,32,0.5);
+            margin-top: 10px;
+        }
+        
+        .contact-links-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-card {
+            background: rgba(15, 15, 15, 0.6);
+            border: 1px solid rgba(212, 25, 32, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            border-color: #d41920;
+            box-shadow: 0 15px 40px rgba(212, 25, 32, 0.3);
+            background: rgba(20, 20, 20, 0.8);
+        }
+
+        .contact-icon {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            color: #d41920;
+            text-shadow: 0 0 15px rgba(212,25,32,0.5);
+            margin-bottom: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover .contact-icon {
+            transform: scale(1.1);
+        }
+
+        .contact-label {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: #e8e8e8;
+            text-transform: uppercase;
+            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0,0,0,0.5);
+        }
+
+        .contact-value {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ccc;
+            transition: color 0.3s;
+            letter-spacing: 1px;
+        }
+
+        .contact-card:hover .contact-value {
+            color: #fff;
+        }
+
+        /* --- Footer --- */
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 40px;
+            border-top: 1px solid rgba(212, 25, 32, 0.1);
+            position: relative;
+            z-index: 2;
+        }
+        .footer-brand-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .footer-logo {
+            width: 32px; height: 32px;
+            border-radius: 6px;
+            object-fit: cover;
+        }
+        .footer-name {
+            font-family: 'Anton', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            color: #ccc;
+        }
+        .footer-tag {
+            font-size: 0.75rem;
+            color: #555;
+            letter-spacing: 1px;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* --- Reveal Animation --- */
+        @keyframes fadeUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .reveal.visible {
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 900px) {
+            .contact-container { grid-template-columns: 1fr; gap: 40px; }
+            .contact-brand-quote { font-size: 2rem; text-align: center; }
+        }
+        @media (max-width: 900px) {
+            .nav { padding: 14px 20px; }
+            .nav-right .nav-cta { display: none; }
+            .mobile-cta { display: block !important; margin-top: 10px; }
+            .hamburger { display: flex; }
+            .nav-center { 
+                position: fixed; top: 0; right: -100%;
+                width: 250px; height: 100vh;
+                background: rgba(10,10,10,0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column; align-items: center; justify-content: center;
+                gap: 40px; transition: right 0.4s ease;
+                border-left: 1px solid rgba(212,25,32,0.2);
+            }
+            .nav-center.open { right: 0; }
+            .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+            .hamburger.active span:nth-child(2) { opacity: 0; }
+            .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+            .contact-header { padding: 120px 20px 40px; }
+            .contact-container { padding: 0 20px 60px; }
+        }
+    </style>
+</head>
+<body class="contact-page">
+    <!-- Particle canvas background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Red glow overlays -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-brand">
+            <img src="img/logo-icon-sm.jpg" alt="Zaylore Studio" class="nav-logo" width="40" height="40">
+            <span class="nav-brand-text">ZAYLORE<br>STUDIO</span>
+        </a>
+        <div class="nav-center" id="nav-center">
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="about.html" id="nav-about">About</a>
+            <a href="events.html" id="nav-events">Events</a>
+            <a href="creators.html" id="nav-creators">Creators</a>
+            <a href="gallery.html" id="nav-gallery">Gallery</a>
+            <a href="contact.html" class="active" id="nav-contact">Contact</a>
+            <a href="#" class="nav-cta mobile-cta" id="join-btn-mobile">Join the Movement</a>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="nav-cta" id="join-btn">Join the Movement</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="contact-header">
+        <h1 class="contact-title">CONNECT</h1>
+        <p class="contact-subtitle">JOIN THE SYNDICATE</p>
+    </header>
+
+    <!-- Contact Details -->
+    <div class="contact-container">
+        
+        <!-- Brand Section -->
+        <div class="contact-brand">
+            <img src="img/logo-full.jpg" alt="Zaylore Studio Brand" class="contact-brand-img">
+            <p class="contact-brand-quote">"BUILT FOR THE BOLD. DESIGNED FOR THE STREETS."</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="contact-links-stack">
+            <!-- Email -->
+            <a href="mailto:hello@zaylorestudio.in" class="contact-card">
+                <span class="contact-icon">@</span>
+                <span class="contact-label">EMAIL US</span>
+                <span class="contact-value">hello@zaylorestudio.in</span>
+            </a>
+            
+            <!-- WhatsApp DM -->
+            <a href="https://wa.me/918220111609" class="contact-card" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">WA</span>
+                <span class="contact-label">WHATSAPP DM</span>
+                <span class="contact-value">+91 8220111609</span>
+            </a>
+            
+            <!-- WhatsApp Community -->
+            <a href="https://chat.whatsapp.com/F8ZO55B3glEHsguZoaBDvl" class="contact-card" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">WC</span>
+                <span class="contact-label">WHATSAPP COMMUNITY</span>
+                <span class="contact-value">Join The Movement</span>
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://instagram.com/zaylore_studio" class="contact-card" target="_blank" rel="noopener noreferrer">
+                <span class="contact-icon">IG</span>
+                <span class="contact-label">INSTAGRAM</span>
+                <span class="contact-value">@zaylore_studio</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-inner">
+            <div class="footer-brand-row">
+                <img src="img/logo-icon-sm.jpg" alt="Zaylore Studio" class="footer-logo" width="32" height="32">
+                <span class="footer-name">ZAYLORE STUDIO</span>
+            </div>
+            <p class="footer-tag">Built for the Bold. Designed for the Streets.</p>
+            <p style="font-family: 'Outfit', sans-serif; font-size: 0.75rem; color: #555;">&copy; 2026 ZaylaStudio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Mobile Menu Logic
+        const hamburger = document.getElementById('hamburger');
+        const navCenter = document.getElementById('nav-center');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navCenter.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
