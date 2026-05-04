@@ -1,67 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events — Zaylore Studio | Brand Activations & Movement</title>
-    <meta name="description" content="Explore Zaylore Studio events and brand activations. Join the movement and experience premium clothing brand experiences with Zaylore.">
-    <meta name="keywords" content="Zaylore events, brand activations, clothing brand events, streetwear movement, Zaylore Studio activities">
-    <meta name="author" content="Zaylore Studio">
+    <title>Zaylore Studio Events | Premium Streetwear Brand Activations</title>
+    <meta name="description"
+        content="Experience Zaylore Studio's cultural drops, streetwear events, and premium brand activations. Join PM Mohammed Waaiz and the creator community.">
+    <meta name="keywords"
+        content="Zaylore events, streetwear events India, fashion brand activations, clothing brand events, streetwear movement, Zaylore Studio activities, PM Mohammed Waaiz events">
+    <meta name="author" content="PM Mohammed Waaiz">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="http://zaylorestudio.in/events.html">
+    <link rel="canonical" href="https://www.zaylorestudio.in/events.html">
     <link rel="icon" href="img/logo-icon-sm.jpg" type="image/jpeg">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://zaylorestudio.in/events.html">
-    <meta property="og:title" content="Zaylore Studio Events - Brand Activations">
-    <meta property="og:description" content="Discover upcoming events and activations from Zaylore Studio, the premium clothing brand">
-    
+    <meta property="og:url" content="https://www.zaylorestudio.in/events.html">
+    <meta property="og:title" content="Zaylore Studio Events | Premium Streetwear Activations">
+    <meta property="og:description"
+        content="Experience Zaylore Studio's cultural drops, streetwear events, and premium brand activations.">
+    <meta property="og:site_name" content="Zaylore Studio">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@zaylorestudio">
+    <meta name="twitter:creator" content="@md_waaizz">
     <meta name="twitter:title" content="Zaylore Studio Events">
-    <meta name="twitter:description" content="Join Zaylore Studio's brand activations and events">
-    
+    <meta name="twitter:description" content="Experience Zaylore Studio's cultural drops, streetwear events, and premium brand activations.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         /* ===== EVENTS PAGE STYLES ===== */
-        .events-page { overflow-x: hidden; }
+        .events-page {
+            overflow-x: hidden;
+        }
 
         /* --- Nav --- */
         .nav {
-            position: fixed; top:0; left:0; width:100%;
-            display: flex; align-items: center; justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 18px 40px;
             z-index: 100;
-            background: linear-gradient(180deg, rgba(10,10,10,0.95) 0%, transparent 100%);
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, transparent 100%);
             backdrop-filter: blur(4px);
             -webkit-backdrop-filter: blur(4px);
             will-change: background, box-shadow;
         }
+
         .nav-brand {
-            display: flex; align-items: center; gap: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             text-decoration: none;
         }
+
         .nav-logo {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             border-radius: 8px;
             object-fit: cover;
-            border: 1px solid rgba(212,25,32,0.3);
-            box-shadow: 0 0 15px rgba(212,25,32,0.2);
+            border: 1px solid rgba(212, 25, 32, 0.3);
+            box-shadow: 0 0 15px rgba(212, 25, 32, 0.2);
         }
+
         .nav-brand-text {
             font-family: 'Anton', sans-serif;
             font-size: 1.1rem;
             letter-spacing: 3px;
             color: #e8e8e8;
-            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0,0,0,0.5);
+            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0, 0, 0, 0.5);
         }
+
         .nav-center {
-            display: flex; gap: 32px;
+            display: flex;
+            gap: 32px;
         }
+
         .nav-center a {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.7rem;
@@ -74,19 +99,36 @@
             padding-bottom: 4px;
             transition: color 0.3s;
         }
+
         .nav-center a::after {
             content: '';
-            position: absolute; bottom: 0; left: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
             transform: translateX(-50%);
-            width: 0; height: 2px;
+            width: 0;
+            height: 2px;
             background: #d41920;
-            box-shadow: 0 0 8px rgba(212,25,32,0.35);
+            box-shadow: 0 0 8px rgba(212, 25, 32, 0.35);
             transition: width 0.3s;
         }
-        .nav-center a:hover { color: #e8e8e8; }
-        .nav-center a:hover::after { width: 100%; }
-        .nav-center a.active { color: #d41920; }
-        .nav-center a.active::after { width: 100%; }
+
+        .nav-center a:hover {
+            color: #e8e8e8;
+        }
+
+        .nav-center a:hover::after {
+            width: 100%;
+        }
+
+        .nav-center a.active {
+            color: #d41920;
+        }
+
+        .nav-center a.active::after {
+            width: 100%;
+        }
+
         .nav-cta {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.65rem;
@@ -99,19 +141,22 @@
             padding: 10px 20px;
             border-radius: 4px;
             transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
         }
+
         .nav-cta:hover {
             background: #d41920;
             color: #fff;
-            box-shadow: 0 0 30px rgba(212,25,32,0.35);
+            box-shadow: 0 0 30px rgba(212, 25, 32, 0.35);
         }
+
         .nav-right {
             display: flex;
             align-items: center;
             gap: 20px;
         }
+
         .hamburger {
             display: none;
             flex-direction: column;
@@ -121,13 +166,17 @@
             cursor: pointer;
             z-index: 101;
         }
+
         .hamburger span {
             width: 25px;
             height: 2px;
             background-color: #e8e8e8;
             transition: all 0.3s;
         }
-        .mobile-cta { display: none; }
+
+        .mobile-cta {
+            display: none;
+        }
 
         /* --- Header --- */
         .events-header {
@@ -136,6 +185,7 @@
             text-align: center;
             z-index: 2;
         }
+
         .events-title {
             font-family: 'Anton', sans-serif;
             font-size: clamp(4rem, 8vw, 6rem);
@@ -145,12 +195,13 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeUp 1s ease forwards;
-            text-shadow: 
+            text-shadow:
                 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa,
-                0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(212,25,32,.2), 0 1px 3px rgba(212,25,32,.4),
-                0 3px 5px rgba(212,25,32,.3), 0 5px 10px rgba(212,25,32,.3), 0 10px 10px rgba(212,25,32,.2),
-                0 20px 20px rgba(212,25,32,.15);
+                0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(212, 25, 32, .2), 0 1px 3px rgba(212, 25, 32, .4),
+                0 3px 5px rgba(212, 25, 32, .3), 0 5px 10px rgba(212, 25, 32, .3), 0 10px 10px rgba(212, 25, 32, .2),
+                0 20px 20px rgba(212, 25, 32, .15);
         }
+
         .events-subtitle {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.85rem;
@@ -159,7 +210,7 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeUp 1s ease 0.3s forwards;
-            text-shadow: 0 1px 0 #900, 0 2px 0 #700, 0 3px 0 #500, 0 4px 10px rgba(212,25,32,0.4);
+            text-shadow: 0 1px 0 #900, 0 2px 0 #700, 0 3px 0 #500, 0 4px 10px rgba(212, 25, 32, 0.4);
         }
 
         /* --- Events Text Content --- */
@@ -191,7 +242,7 @@
             font-size: 4rem;
             color: #fff;
             margin-bottom: 40px;
-            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(212,25,32,0.6);
+            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(212, 25, 32, 0.6);
             letter-spacing: 2px;
             border-bottom: 2px solid #d41920;
             padding-bottom: 10px;
@@ -209,12 +260,15 @@
             align-items: center;
             gap: 20px;
             padding: 20px;
-            background: rgba(0,0,0,0.4);
+            background: rgba(0, 0, 0, 0.4);
             border-radius: 8px;
             border-left: 4px solid #d41920;
         }
 
-        .info-icon { font-size: 2rem; }
+        .info-icon {
+            font-size: 2rem;
+        }
+
         .info-label {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.9rem;
@@ -222,13 +276,17 @@
             font-weight: 700;
             min-width: 150px;
         }
+
         .info-value {
             font-family: 'Outfit', sans-serif;
             font-size: 1.2rem;
             color: #eee;
             font-weight: 600;
         }
-        .text-red { color: #d41920; }
+
+        .text-red {
+            color: #d41920;
+        }
 
         .bold-motto {
             font-family: 'Space Grotesk', sans-serif;
@@ -250,7 +308,8 @@
             backdrop-filter: none;
         }
 
-        .highlights-box, .matters-box {
+        .highlights-box,
+        .matters-box {
             background: rgba(15, 15, 15, 0.7);
             border: 1px solid rgba(212, 25, 32, 0.2);
             border-radius: 12px;
@@ -315,7 +374,7 @@
             text-align: center;
             margin-top: 20px;
             padding: 40px;
-            background: linear-gradient(90deg, transparent, rgba(212,25,32,0.1), transparent);
+            background: linear-gradient(90deg, transparent, rgba(212, 25, 32, 0.1), transparent);
         }
 
         .cultural-drop p {
@@ -331,7 +390,7 @@
             font-size: 5rem;
             color: #fff;
             margin-top: 10px;
-            text-shadow: 0 5px 15px rgba(212,25,32,0.5);
+            text-shadow: 0 5px 15px rgba(212, 25, 32, 0.5);
         }
 
         .event-gallery {
@@ -339,7 +398,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
-        
+
         .event-image-wrapper {
             position: relative;
             border-radius: 12px;
@@ -348,7 +407,7 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
             transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
         }
-        
+
         .event-image-wrapper:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 50px rgba(212, 25, 32, 0.4);
@@ -363,7 +422,7 @@
             filter: grayscale(20%) contrast(110%);
             transition: filter 0.4s ease, transform 0.8s ease;
         }
-        
+
         .event-image-wrapper:hover img {
             filter: grayscale(0%) contrast(120%);
             transform: scale(1.05);
@@ -379,24 +438,32 @@
             top: 100px;
             left: 0;
             z-index: 10;
-            box-shadow: 0 5px 20px rgba(212,25,32,0.4);
+            box-shadow: 0 5px 20px rgba(212, 25, 32, 0.4);
             transform: rotate(-2deg) scale(1.05);
         }
+
         .marquee-track {
             display: flex;
             gap: 50px;
             white-space: nowrap;
             animation: marqueeScroll 15s linear infinite;
         }
+
         .marquee-track span {
             font-family: 'Anton', sans-serif;
             font-size: 1.5rem;
             color: #fff;
             letter-spacing: 4px;
         }
+
         @keyframes marqueeScroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
         }
 
         .brand-watermark {
@@ -425,22 +492,27 @@
             position: relative;
             z-index: 2;
         }
+
         .footer-brand-row {
             display: flex;
             align-items: center;
             gap: 12px;
         }
+
         .footer-logo {
-            width: 32px; height: 32px;
+            width: 32px;
+            height: 32px;
             border-radius: 6px;
             object-fit: cover;
         }
+
         .footer-name {
             font-family: 'Anton', sans-serif;
             font-size: 1.2rem;
             letter-spacing: 3px;
             color: #ccc;
         }
+
         .footer-tag {
             font-size: 0.75rem;
             color: #555;
@@ -450,45 +522,138 @@
 
         /* --- Reveal Animation --- */
         @keyframes fadeUp {
-            to { opacity: 1; transform: translateY(0); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .reveal.visible {
             animation: fadeUp 0.8s ease forwards;
         }
 
         /* --- Responsive --- */
         @media (max-width: 900px) {
-            .details-split { grid-template-columns: 1fr; }
-            .event-gallery { grid-template-columns: 1fr; gap: 30px; }
-            .info-card { flex-direction: column; text-align: center; gap: 10px; }
-            .info-label { min-width: auto; }
-            .section-heading { font-size: 3rem; }
-            .cultural-title { font-size: 3.5rem; }
-            .events-header { padding: 120px 20px 20px; }
-            .events-content-wrapper { padding: 0 20px 60px; }
-        }
-        @media (max-width: 900px) {
-            .nav { padding: 14px 20px; }
-            .nav-right .nav-cta { display: none; }
-            .mobile-cta { display: block !important; margin-top: 10px; }
-            .hamburger { display: flex; }
-            .nav-center { 
-                position: fixed; top: 0; right: -100%;
-                width: 250px; height: 100vh;
-                background: rgba(10,10,10,0.98);
-                backdrop-filter: blur(10px);
-                flex-direction: column; align-items: center; justify-content: center;
-                gap: 40px; transition: right 0.4s ease;
-                border-left: 1px solid rgba(212,25,32,0.2);
+            .details-split {
+                grid-template-columns: 1fr;
             }
-            .nav-center.open { right: 0; }
-            .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-            .hamburger.active span:nth-child(2) { opacity: 0; }
-            .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+            .event-gallery {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .info-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+
+            .info-label {
+                min-width: auto;
+            }
+
+            .section-heading {
+                font-size: 3rem;
+            }
+
+            .cultural-title {
+                font-size: 3.5rem;
+            }
+
+            .events-header {
+                padding: 120px 20px 20px;
+            }
+
+            .events-content-wrapper {
+                padding: 0 20px 60px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .nav {
+                padding: 14px 20px;
+            }
+
+            .nav-right .nav-cta {
+                display: none;
+            }
+
+            .mobile-cta {
+                display: block !important;
+                margin-top: 10px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-center {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                transition: right 0.4s ease;
+                border-left: 1px solid rgba(212, 25, 32, 0.2);
+            }
+
+            .nav-center.open {
+                right: 0;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
 
         }
     </style>
+
+    <!-- Complete SEO Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Zaylore Studio: The Inaugural Showcase",
+      "startDate": "2026-08-23T11:00",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Bangalore",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bangalore",
+          "addressCountry": "IN"
+        }
+      },
+      "image": [
+        "https://www.zaylorestudio.in/img/logo-full.jpg"
+      ],
+      "description": "Live fashion rampwalk showcase, influencer attendance, pop-up shopping experience, and immersive vibe by premium streetwear brand Zaylore Studio.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Zaylore Studio",
+        "url": "https://www.zaylorestudio.in"
+      }
+    }
+    </script>
 </head>
+
 <body class="events-page">
     <!-- Particle canvas background -->
     <canvas id="particles-canvas"></canvas>
@@ -550,11 +715,11 @@
 
     <!-- Events Content -->
     <div class="events-content-wrapper">
-        
+
         <!-- Event Overview (Image 4 Data) -->
         <section class="event-section overview-section">
             <h2 class="section-heading">EVENT OVERVIEW</h2>
-            
+
             <div class="info-grid">
                 <div class="info-card">
                     <span class="info-icon">📋</span>
@@ -577,7 +742,7 @@
                     <span class="info-value">CREATORS • STUDENTS • INFLUENCERS • GEN Z</span>
                 </div>
             </div>
-            
+
             <div class="bold-motto">
                 BUILT FOR THE <span class="text-red">BOLD.</span>
             </div>
@@ -596,7 +761,7 @@
                     <li>HIGH-ENERGY MUSIC & IMMERSIVE VIBE</li>
                 </ul>
             </div>
-            
+
             <!-- Why It Matters -->
             <div class="matters-box">
                 <h2 class="section-heading">WHY THIS EVENT MATTERS</h2>
@@ -632,7 +797,7 @@
             <p>THIS ISN'T JUST AN EVENT —</p>
             <h2 class="cultural-title">IT'S A <span class="text-red">CULTURAL DROP.</span></h2>
         </div>
-        
+
     </div>
 
     <!-- Footer -->
@@ -643,7 +808,8 @@
                 <span class="footer-name">ZAYLORE STUDIO</span>
             </div>
             <p class="footer-tag">Built for the Bold. Designed for the Streets.</p>
-            <p style="font-family: 'Outfit', sans-serif; font-size: 0.75rem; color: #555;">&copy; 2026 ZaylaStudio. All rights reserved.</p>
+            <p style="font-family: 'Outfit', sans-serif; font-size: 0.75rem; color: #555;">&copy; 2026 ZaylaStudio. All
+                rights reserved.</p>
         </div>
     </footer>
 
@@ -658,4 +824,5 @@
         });
     </script>
 </body>
+
 </html>

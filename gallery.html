@@ -1,69 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery — Zaylore Studio | Premium Clothing Brand Visuals</title>
-    <meta name="description" content="Explore the visual gallery of Zaylore Studio. Discover premium streetwear, fashion photography, and brand culture at Zaylore.">
-    <meta name="keywords" content="Zaylore gallery, streetwear fashion, clothing brand visuals, Zaylore photography, premium apparel">
-    <meta name="author" content="Zaylore Studio">
+    <title>Gallery | Zaylore Studio | Premium Streetwear Brand Visuals</title>
+    <meta name="description"
+        content="Explore the visual gallery of Zaylore Studio. Discover premium streetwear, aesthetic fashion photography, oversized t-shirts, hoodies, and brand culture.">
+    <meta name="keywords"
+        content="Zaylore gallery, streetwear fashion, clothing brand visuals, Zaylore photography, premium apparel, oversized clothing visuals, aesthetic streetwear photos">
+    <meta name="author" content="PM Mohammed Waaiz">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="http://zaylorestudio.in/gallery.html">
+    <link rel="canonical" href="https://www.zaylorestudio.in/gallery.html">
     <link rel="icon" href="img/logo-icon-sm.jpg" type="image/jpeg">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://zaylorestudio.in/gallery.html">
-    <meta property="og:title" content="Zaylore Studio Gallery - Premium Clothing Brand">
-    <meta property="og:description" content="Explore stunning visuals of Zaylore Studio's premium streetwear and fashion brand culture">
-    <meta property="og:image" content="http://zaylorestudio.in/img/gallery-1.jpg">
-    
+    <meta property="og:url" content="https://www.zaylorestudio.in/gallery.html">
+    <meta property="og:title" content="Gallery | Zaylore Studio Premium Streetwear">
+    <meta property="og:description"
+        content="Explore stunning visuals of Zaylore Studio's premium streetwear and fashion brand culture.">
+    <meta property="og:image" content="https://www.zaylorestudio.in/img/gallery-1.jpg">
+    <meta property="og:site_name" content="Zaylore Studio">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zaylore Studio Gallery">
-    <meta name="twitter:description" content="Discover Zaylore Studio's premium clothing brand visuals and fashion photography">
-    <meta name="twitter:image" content="http://zaylorestudio.in/img/gallery-1.jpg">
-    
+    <meta name="twitter:site" content="@zaylorestudio">
+    <meta name="twitter:creator" content="@md_waaizz">
+    <meta name="twitter:title" content="Gallery | Zaylore Studio">
+    <meta name="twitter:description"
+        content="Discover Zaylore Studio's premium clothing brand visuals and fashion photography.">
+    <meta name="twitter:image" content="https://www.zaylorestudio.in/img/gallery-1.jpg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         /* ===== GALLERY PAGE STYLES ===== */
-        .gallery-page { overflow-x: hidden; }
+        .gallery-page {
+            overflow-x: hidden;
+        }
 
         /* --- Nav --- */
         .nav {
-            position: fixed; top:0; left:0; width:100%;
-            display: flex; align-items: center; justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             padding: 18px 40px;
             z-index: 100;
-            background: linear-gradient(180deg, rgba(10,10,10,0.95) 0%, transparent 100%);
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.95) 0%, transparent 100%);
             backdrop-filter: blur(4px);
             -webkit-backdrop-filter: blur(4px);
             will-change: background, box-shadow;
         }
+
         .nav-brand {
-            display: flex; align-items: center; gap: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
             text-decoration: none;
         }
+
         .nav-logo {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             border-radius: 8px;
             object-fit: cover;
-            border: 1px solid rgba(212,25,32,0.3);
-            box-shadow: 0 0 15px rgba(212,25,32,0.2);
+            border: 1px solid rgba(212, 25, 32, 0.3);
+            box-shadow: 0 0 15px rgba(212, 25, 32, 0.2);
         }
+
         .nav-brand-text {
             font-family: 'Anton', sans-serif;
             font-size: 1.1rem;
             letter-spacing: 3px;
             color: #e8e8e8;
-            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0,0,0,0.5);
+            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0, 0, 0, 0.5);
         }
+
         .nav-center {
-            display: flex; gap: 32px;
+            display: flex;
+            gap: 32px;
         }
+
         .nav-center a {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.7rem;
@@ -76,19 +102,36 @@
             padding-bottom: 4px;
             transition: color 0.3s;
         }
+
         .nav-center a::after {
             content: '';
-            position: absolute; bottom: 0; left: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
             transform: translateX(-50%);
-            width: 0; height: 2px;
+            width: 0;
+            height: 2px;
             background: #d41920;
-            box-shadow: 0 0 8px rgba(212,25,32,0.35);
+            box-shadow: 0 0 8px rgba(212, 25, 32, 0.35);
             transition: width 0.3s;
         }
-        .nav-center a:hover { color: #e8e8e8; }
-        .nav-center a:hover::after { width: 100%; }
-        .nav-center a.active { color: #d41920; }
-        .nav-center a.active::after { width: 100%; }
+
+        .nav-center a:hover {
+            color: #e8e8e8;
+        }
+
+        .nav-center a:hover::after {
+            width: 100%;
+        }
+
+        .nav-center a.active {
+            color: #d41920;
+        }
+
+        .nav-center a.active::after {
+            width: 100%;
+        }
+
         .nav-cta {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.65rem;
@@ -101,19 +144,22 @@
             padding: 10px 20px;
             border-radius: 4px;
             transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
         }
+
         .nav-cta:hover {
             background: #d41920;
             color: #fff;
-            box-shadow: 0 0 30px rgba(212,25,32,0.35);
+            box-shadow: 0 0 30px rgba(212, 25, 32, 0.35);
         }
+
         .nav-right {
             display: flex;
             align-items: center;
             gap: 20px;
         }
+
         .hamburger {
             display: none;
             flex-direction: column;
@@ -123,13 +169,17 @@
             cursor: pointer;
             z-index: 101;
         }
+
         .hamburger span {
             width: 25px;
             height: 2px;
             background-color: #e8e8e8;
             transition: all 0.3s;
         }
-        .mobile-cta { display: none; }
+
+        .mobile-cta {
+            display: none;
+        }
 
         /* --- Header --- */
         .gallery-header {
@@ -138,6 +188,7 @@
             text-align: center;
             z-index: 2;
         }
+
         .gallery-title {
             font-family: 'Anton', sans-serif;
             font-size: clamp(4rem, 8vw, 6rem);
@@ -147,12 +198,13 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeUp 1s ease forwards;
-            text-shadow: 
+            text-shadow:
                 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa,
-                0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(212,25,32,.2), 0 1px 3px rgba(212,25,32,.4),
-                0 3px 5px rgba(212,25,32,.3), 0 5px 10px rgba(212,25,32,.3), 0 10px 10px rgba(212,25,32,.2),
-                0 20px 20px rgba(212,25,32,.15);
+                0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(212, 25, 32, .2), 0 1px 3px rgba(212, 25, 32, .4),
+                0 3px 5px rgba(212, 25, 32, .3), 0 5px 10px rgba(212, 25, 32, .3), 0 10px 10px rgba(212, 25, 32, .2),
+                0 20px 20px rgba(212, 25, 32, .15);
         }
+
         .gallery-subtitle {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.85rem;
@@ -161,7 +213,7 @@
             opacity: 0;
             transform: translateY(20px);
             animation: fadeUp 1s ease 0.3s forwards;
-            text-shadow: 0 1px 0 #900, 0 2px 0 #700, 0 3px 0 #500, 0 4px 10px rgba(212,25,32,0.4);
+            text-shadow: 0 1px 0 #900, 0 2px 0 #700, 0 3px 0 #500, 0 4px 10px rgba(212, 25, 32, 0.4);
         }
 
         /* --- Gallery Grid --- */
@@ -172,7 +224,7 @@
             position: relative;
             z-index: 2;
         }
-        
+
         .masonry-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -209,7 +261,7 @@
         .gallery-item-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, transparent 50%);
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.9) 0%, transparent 50%);
             opacity: 0;
             transition: opacity 0.4s ease;
             display: flex;
@@ -228,7 +280,7 @@
             transform: translateY(15px);
             transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
             letter-spacing: 2px;
-            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0,0,0,0.8);
+            text-shadow: 0 1px 0 #999, 0 2px 0 #777, 0 3px 5px rgba(0, 0, 0, 0.8);
         }
 
         .gallery-item:hover .gallery-item-text {
@@ -246,22 +298,27 @@
             position: relative;
             z-index: 2;
         }
+
         .footer-brand-row {
             display: flex;
             align-items: center;
             gap: 12px;
         }
+
         .footer-logo {
-            width: 32px; height: 32px;
+            width: 32px;
+            height: 32px;
             border-radius: 6px;
             object-fit: cover;
         }
+
         .footer-name {
             font-family: 'Anton', sans-serif;
             font-size: 1.2rem;
             letter-spacing: 3px;
             color: #ccc;
         }
+
         .footer-tag {
             font-size: 0.75rem;
             color: #555;
@@ -271,43 +328,117 @@
 
         /* --- Reveal Animation --- */
         @keyframes fadeUp {
-            to { opacity: 1; transform: translateY(0); }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .reveal.visible {
             animation: fadeUp 0.8s ease forwards;
         }
 
         /* --- Responsive --- */
         @media (max-width: 1024px) {
-            .masonry-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 900px) {
-            .nav { padding: 14px 20px; }
-            .nav-right .nav-cta { display: none; }
-            .mobile-cta { display: block !important; margin-top: 10px; }
-            .hamburger { display: flex; }
-            .nav-center { 
-                position: fixed; top: 0; right: -100%;
-                width: 250px; height: 100vh;
-                background: rgba(10,10,10,0.98);
-                backdrop-filter: blur(10px);
-                flex-direction: column; align-items: center; justify-content: center;
-                gap: 40px; transition: right 0.4s ease;
-                border-left: 1px solid rgba(212,25,32,0.2);
+            .masonry-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
-            .nav-center.open { right: 0; }
-            .hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-            .hamburger.active span:nth-child(2) { opacity: 0; }
-            .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-            .gallery-header { padding: 120px 20px 40px; }
-            .masonry-grid { grid-template-columns: 1fr; }
-            .gallery-container { padding: 0 20px 60px; }
-            .gallery-item img { filter: grayscale(0%) brightness(1); }
-            .gallery-item-overlay { opacity: 1; background: linear-gradient(to top, rgba(10,10,10,0.8) 0%, transparent 40%); }
-            .gallery-item-text { transform: translateY(0); font-size: 1.5rem; }
+        }
+
+        @media (max-width: 900px) {
+            .nav {
+                padding: 14px 20px;
+            }
+
+            .nav-right .nav-cta {
+                display: none;
+            }
+
+            .mobile-cta {
+                display: block !important;
+                margin-top: 10px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-center {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 250px;
+                height: 100vh;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+                transition: right 0.4s ease;
+                border-left: 1px solid rgba(212, 25, 32, 0.2);
+            }
+
+            .nav-center.open {
+                right: 0;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+            }
+
+            .gallery-header {
+                padding: 120px 20px 40px;
+            }
+
+            .masonry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-container {
+                padding: 0 20px 60px;
+            }
+
+            .gallery-item img {
+                filter: grayscale(0%) brightness(1);
+            }
+
+            .gallery-item-overlay {
+                opacity: 1;
+                background: linear-gradient(to top, rgba(10, 10, 10, 0.8) 0%, transparent 40%);
+            }
+
+            .gallery-item-text {
+                transform: translateY(0);
+                font-size: 1.5rem;
+            }
         }
     </style>
+
+    <!-- Complete SEO Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Zaylore Studio Streetwear Gallery",
+      "description": "Visuals of premium streetwear, oversized t-shirts, and fashion photography from Zaylore Studio.",
+      "url": "https://www.zaylorestudio.in/gallery.html",
+      "author": {
+        "@type": "Organization",
+        "name": "Zaylore Studio"
+      }
+    }
+    </script>
 </head>
+
 <body class="gallery-page">
     <!-- Particle canvas background -->
     <canvas id="particles-canvas"></canvas>
@@ -356,7 +487,7 @@
                     <span class="gallery-item-text">STREET SYMPHONY</span>
                 </div>
             </div>
-            
+
             <!-- Image 2 -->
             <div class="gallery-item reveal" style="animation-delay: 0.1s;">
                 <img src="img/gallery-2.jpg" alt="Zaylore Studio Look 2" loading="lazy">
@@ -364,7 +495,7 @@
                     <span class="gallery-item-text">URBAN GRIT</span>
                 </div>
             </div>
-            
+
             <!-- Image 3 -->
             <div class="gallery-item reveal" style="animation-delay: 0.2s;">
                 <img src="img/gallery-3.jpg" alt="Zaylore Studio Look 3" loading="lazy">
@@ -372,7 +503,7 @@
                     <span class="gallery-item-text">MIDNIGHT HUSTLE</span>
                 </div>
             </div>
-            
+
             <!-- Image 4 -->
             <div class="gallery-item reveal" style="animation-delay: 0.3s;">
                 <img src="img/gallery-4.jpg" alt="Zaylore Studio Look 4" loading="lazy">
@@ -380,7 +511,7 @@
                     <span class="gallery-item-text">NEON SHADOWS</span>
                 </div>
             </div>
-            
+
             <!-- Image 5 (New) -->
             <div class="gallery-item reveal" style="animation-delay: 0.35s;">
                 <img src="img/gallery-6.jpg" alt="Zaylore Studio Look 6" loading="lazy">
@@ -388,7 +519,7 @@
                     <span class="gallery-item-text">THE SYNDICATE</span>
                 </div>
             </div>
-            
+
             <!-- Image 6 -->
             <div class="gallery-item reveal" style="animation-delay: 0.4s;">
                 <img src="img/gallery-5.jpg" alt="Zaylore Studio Look 5" loading="lazy">
@@ -407,7 +538,8 @@
                 <span class="footer-name">ZAYLORE STUDIO</span>
             </div>
             <p class="footer-tag">Built for the Bold. Designed for the Streets.</p>
-            <p style="font-family: 'Outfit', sans-serif; font-size: 0.75rem; color: #555;">&copy; 2026 ZaylaStudio. All rights reserved.</p>
+            <p style="font-family: 'Outfit', sans-serif; font-size: 0.75rem; color: #555;">&copy; 2026 ZaylaStudio. All
+                rights reserved.</p>
         </div>
     </footer>
 
@@ -438,4 +570,5 @@
         });
     </script>
 </body>
+
 </html>

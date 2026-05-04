@@ -20,8 +20,7 @@ Disallow: /*?*filter=
 Crawl-delay: 1
 
 # Sitemap locations - T-Shirts, Hoodies, Clothing Products
-Sitemap: http://zaylorestudio.in/sitemap.xml
-Sitemap: http://zaylorestudio.in/sitemap-index.xml
+Sitemap: https://www.zaylorestudio.in/sitemap.xml
 
 # Google Bot specific
 User-agent: Googlebot
