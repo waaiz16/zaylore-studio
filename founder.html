@@ -890,6 +890,25 @@
             transform: scale(1.05);
         }
 
+        .founder-hero-content-box {
+            background: rgba(10, 10, 10, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 25, 32, 0.3);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 40px rgba(212, 25, 32, 0.15);
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 95vw;
+        }
+
+        @media (max-width: 600px) {
+            .founder-hero-content-box {
+                padding: 40px 20px;
+            }
+        }
+
         /* --- Premium Vision & Founder Section Styles --- */
         .premium-vision-section {
             padding: 120px 40px;
@@ -1184,10 +1203,16 @@
     <section class="about-hero" id="founder-hero" style="min-height: 40vh; padding: 120px 20px 40px; display: flex; align-items: center; justify-content: center; position: relative;">
         <div class="hero-bg-overlay"></div>
         <img src="img/about-hero-bg.jpg" alt="" class="hero-bg-img" aria-hidden="true" decoding="async">
-        <div class="hero-inner" style="z-index: 2; text-align: center;">
-            <div class="sec-label" style="justify-content:center; margin-bottom: 20px;">FOUNDER & BRAND AUTHORITY</div>
-            <h1 class="brand-zaylore founder-name-glow hero-fade hd2" style="font-size: clamp(3rem, 6vw, 5rem);">PM MOHAMMED WAAIZ</h1>
-            <p class="hero-tagline hero-fade hd3" style="color: #d41920; letter-spacing: 5px; margin-top: 10px;">FOUNDER & MANAGING DIRECTOR</p>
+        <div class="hero-inner" style="z-index: 2; text-align: center; flex-direction: column; width: 100%;">
+            <div class="founder-hero-content-box hero-fade hd1">
+                <div class="sec-label" style="justify-content:center; margin-bottom: 20px;">FOUNDER & BRAND AUTHORITY</div>
+                <div style="position: relative; display: inline-block; width: 100%;">
+                    <h1 class="brand-zaylore founder-name-glow hero-fade hd2" style="font-size: min(9vw, 5rem); white-space: nowrap; margin: 0; line-height: 1;">PM MOHAMMED WAAIZ</h1>
+                    <div style="text-align: right; width: 100%; margin-top: 5px;">
+                        <p class="hero-tagline hero-fade hd3" style="color: #d41920; letter-spacing: 3px; font-size: clamp(0.7rem, 2vw, 1rem); display: inline-block; margin: 0;">FOUNDER & MANAGING DIRECTOR</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
