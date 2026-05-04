@@ -1,0 +1,36 @@
+# Zaylore Studio - robots.txt
+# Premium Clothing Brand: T-Shirts, Hoodies, Apparel
+# Allow all search engines to crawl the website
+
+User-agent: *
+Allow: /
+Allow: /collections/
+Allow: /products/
+Allow: /img/
+Allow: /Sponsorimages/
+
+# Disallow private/admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Crawl delay (in seconds)
+Crawl-delay: 1
+
+# Sitemap locations - T-Shirts, Hoodies, Clothing Products
+Sitemap: https://zaylorestudio.com/sitemap.xml
+Sitemap: https://zaylorestudio.com/sitemap-index.xml
+
+# Google Bot specific
+User-agent: Googlebot
+Allow: /
+
+# Bing Bot specific
+User-agent: Bingbot
+Allow: /
+
+# Yandex Bot
+User-agent: YandexBot
+Allow: /

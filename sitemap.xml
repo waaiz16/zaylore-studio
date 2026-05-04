@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page - T-Shirts, Hoodies, Clothing Brand -->
+    <url>
+        <loc>https://zaylorestudio.com/</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Collections - Premium T-Shirts -->
+    <url>
+        <loc>https://zaylorestudio.com/collections/tshirts</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
+    <!-- Collections - Hoodies & Sweatshirts -->
+    <url>
+        <loc>https://zaylorestudio.com/collections/hoodies</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
+    <!-- Collections - All Apparel -->
+    <url>
+        <loc>https://zaylorestudio.com/collections/apparel</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Collections - Streetwear -->
+    <url>
+        <loc>https://zaylorestudio.com/collections/streetwear</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- About Page - Brand Story -->
+    <url>
+        <loc>https://zaylorestudio.com/about.html</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- Gallery - Product Images -->
+    <url>
+        <loc>https://zaylorestudio.com/gallery.html</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Events Page - Fashion Events -->
+    <url>
+        <loc>https://zaylorestudio.com/events.html</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Creators Page -->
+    <url>
+        <loc>https://zaylorestudio.com/creators.html</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    
+    <!-- Contact Page - Orders & Inquiries -->
+    <url>
+        <loc>https://zaylorestudio.com/contact.html</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- SEO Guide & Resources -->
+    <url>
+        <loc>https://zaylorestudio.com/SEO-GUIDE.md</loc>
+        <lastmod>2026-05-04</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>
