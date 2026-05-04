@@ -69,7 +69,7 @@ Place this inside the `<head>` of your `theme.liquid`:
       "@id": "{{ shop.url }}/#founder",
       "name": "PM Mohammed Waaiz",
       "alternateName": "md_waaizz",
-      "jobTitle": ["Founder", "Owner", "Managing Director", "CEO"],
+      "jobTitle": ["Founder", "Managing Director", "CEO"],
       "worksFor": {
         "@id": "{{ shop.url }}/#organization"
       },
@@ -194,7 +194,7 @@ export default function RootLayout({
         "@id": "https://www.zaylorestudio.in/#founder",
         "name": "PM Mohammed Waaiz",
         "alternateName": "md_waaizz",
-        "jobTitle": ["Founder", "Owner", "Managing Director", "CEO"],
+        "jobTitle": ["Founder", "Managing Director", "CEO"],
         "worksFor": {
           "@id": "https://www.zaylorestudio.in/#organization"
         },
