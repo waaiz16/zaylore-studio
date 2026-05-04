@@ -538,6 +538,132 @@
       }
     }
     </script>
+    
+    <!-- ===== SCHEMA MARKUP FOR SEO ===== -->
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Zaylore Studio",
+      "url": "https://zaylorestudio.com",
+      "logo": "https://zaylorestudio.com/img/logo-full.jpg",
+      "description": "Premium clothing brand specializing in t-shirts, hoodies, and streetwear apparel",
+      "sameAs": [
+        "https://www.instagram.com/zaylorestudio",
+        "https://www.facebook.com/zaylorestudio",
+        "https://www.tiktok.com/@zaylorestudio",
+        "https://www.youtube.com/@zaylorestudio"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "@context": "https://schema.org",
+        "contactType": "Customer Service",
+        "email": "info@zaylorestudio.com",
+        "availableLanguage": ["en"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+    
+    <!-- Brand/Product Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Brand",
+      "name": "Zaylore",
+      "url": "https://zaylorestudio.com",
+      "logo": "https://zaylorestudio.com/img/logo-full.jpg",
+      "description": "Premium clothing brand featuring t-shirts, hoodies, and exclusive streetwear apparel for creators and fashion enthusiasts"
+    }
+    </script>
+    
+    <!-- Homepage Product Collection Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Zaylore Studio - Premium Clothing Brand",
+      "url": "https://zaylorestudio.com",
+      "description": "Shop premium t-shirts, hoodies, streetwear, and designer apparel at Zaylore Studio. Exclusive clothing brand for men and women.",
+      "image": "https://zaylorestudio.com/img/hero-bg.jpg",
+      "datePublished": "2026-01-01",
+      "dateModified": "2026-05-04",
+      "mainEntity": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://zaylorestudio.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "T-Shirts",
+            "item": "https://zaylorestudio.com/collections/tshirts"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Hoodies",
+            "item": "https://zaylorestudio.com/collections/hoodies"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Apparel",
+            "item": "https://zaylorestudio.com/collections/apparel"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- AggregateOffer Schema for Products -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AggregateOffer",
+      "name": "Zaylore Studio Premium Clothing Collection",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Premium T-Shirts",
+          "url": "https://zaylorestudio.com/collections/tshirts",
+          "priceCurrency": "USD",
+          "price": "29.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "category": "T-Shirts"
+        },
+        {
+          "@type": "Offer",
+          "name": "Premium Hoodies",
+          "url": "https://zaylorestudio.com/collections/hoodies",
+          "priceCurrency": "USD",
+          "price": "59.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "category": "Hoodies"
+        },
+        {
+          "@type": "Offer",
+          "name": "Streetwear Apparel",
+          "url": "https://zaylorestudio.com/collections/apparel",
+          "priceCurrency": "USD",
+          "price": "39.99",
+          "priceValidUntil": "2026-12-31",
+          "availability": "https://schema.org/InStock",
+          "category": "Apparel"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
