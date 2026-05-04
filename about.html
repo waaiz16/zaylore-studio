@@ -877,6 +877,203 @@
                 padding: 40px 24px;
             }
         }
+
+        /* --- Premium Vision & Founder Section Styles --- */
+        .premium-vision-section {
+            padding: 120px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .premium-vision-heading {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            color: #e8e8e8;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+        }
+
+        .premium-vision-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #999;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .premium-vision-text strong {
+            color: #d41920;
+            font-weight: 600;
+        }
+
+        .founder-authority-section {
+            padding: 80px 40px 140px;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            background: rgba(15, 15, 15, 0.6);
+            border: 1px solid rgba(212, 25, 32, 0.15);
+            border-radius: 16px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .founder-header {
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 40px;
+        }
+
+        .founder-title {
+            font-family: 'Anton', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: #fff;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .founder-subtitle {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            color: #d41920;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .founder-story {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            color: #bbb;
+            line-height: 1.9;
+        }
+
+        .founder-story p {
+            margin-bottom: 24px;
+        }
+
+        .founder-philosophy-list {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .founder-philosophy-list li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #e8e8e8;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+        }
+
+        .founder-philosophy-list li::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #d41920;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(212, 25, 32, 0.5);
+        }
+
+        .founder-socials {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .founder-social-link {
+            color: #777;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.85rem;
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .founder-social-link:hover {
+            color: #d41920;
+            border-bottom-color: #d41920;
+        }
+
+        .premium-cta-wrapper {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .premium-cta-btn {
+            display: inline-block;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #fff;
+            background: transparent;
+            padding: 20px 50px;
+            border: 1px solid #d41920;
+            border-radius: 4px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .premium-cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #d41920;
+            z-index: -1;
+            transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .premium-cta-btn:hover {
+            color: #fff;
+            border-color: #d41920;
+            box-shadow: 0 15px 40px rgba(212, 25, 32, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .premium-cta-btn:hover::before {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .premium-vision-section {
+                padding: 80px 20px;
+            }
+            .founder-grid {
+                padding: 40px 20px;
+            }
+            .founder-socials {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
     </style>
 
     <!-- Complete SEO Schema.org Structured Data -->
@@ -1086,15 +1283,73 @@
         </div>
     </section>
 
-    <!-- ===== VISION ===== -->
-    <section class="ab-section" id="vision">
-        <div class="vision-box reveal">
-            <div class="sec-label" style="justify-content:center;">OUR VISION</div>
-            <h2 class="vision-heading">
-                TO REDEFINE<br>
-                <span class="giant">GEN Z</span><br>
-                FASHION CULTURE<br>IN INDIA.
-            </h2>
+    <!-- ===== PREMIUM VISION & FOUNDER AUTHORITY ===== -->
+    <section class="premium-vision-section reveal" id="vision">
+        <div class="sec-label" style="justify-content:center; margin-bottom: 24px;">THE MOVEMENT</div>
+        <h2 class="premium-vision-heading">BEYOND CLOTHING.<br>A <span class="text-red">CULTURAL IDENTITY.</span></h2>
+        <p class="premium-vision-text">
+            <strong>Zaylore Studio</strong> is not just a clothing brand; it is a premium fashion movement and a cultural streetwear identity. We are building a future global luxury streetwear label designed for those who refuse to blend in.
+        </p>
+        <p class="premium-vision-text">
+            Our vision is rooted in originality, youth culture influence, and modern minimal aesthetic language. From our signature <strong>oversized t-shirts</strong> and <strong>hoodies</strong> to meticulously crafted cargo pants, joggers, and bomber jackets, every piece is a testament to premium oversized fashion and modern street culture.
+        </p>
+    </section>
+
+    <section class="founder-authority-section reveal d2" id="founder-authority">
+        <div class="founder-grid">
+            <div class="founder-header">
+                <div class="sec-label" style="justify-content:center; margin-bottom: 20px;">FOUNDER & BRAND AUTHORITY</div>
+                <h2 class="founder-title">PM MOHAMMED WAAIZ</h2>
+                <div class="founder-subtitle">Founder, Owner & Managing Director</div>
+            </div>
+            
+            <div class="founder-story">
+                <p>
+                    At the core of <strong>Zaylore Studio</strong> is the vision of PM Mohammed Waaiz — a modern founder and creative entrepreneur focused on building a globally influential premium streetwear identity rooted in originality, ambition, and cultural expression.
+                </p>
+                <p>
+                    His vision extends beyond fashion products. Zaylore Studio represents individuality, modern youth culture, elevated street aesthetics, oversized fashion, and the emotional connection between identity and self-expression.
+                </p>
+                <p>
+                    Inspired by global urban streetwear culture, modern design philosophy, contemporary fashion, music, art, and digital creativity, PM Mohammed Waaiz founded Zaylore Studio with the ambition of creating a luxury streetwear India label that feels authentic, visionary, and culturally connected.
+                </p>
+                
+                <h3 style="font-family: 'Anton', sans-serif; font-size: 1.8rem; color: #fff; margin: 40px 0 20px; letter-spacing: 1px;">THE BRAND REFLECTS:</h3>
+                <ul class="founder-philosophy-list">
+                    <li>Confidence without arrogance</li>
+                    <li>Creativity without limitation</li>
+                    <li>Individuality without compromise</li>
+                    <li>Luxury with cultural relevance</li>
+                </ul>
+
+                <p>
+                    As Founder, Owner & Managing Director, PM Mohammed Waaiz is building Zaylore Studio not as a trend-driven fashion label, but as a long-term creative movement designed to influence modern streetwear culture globally.
+                </p>
+
+                <h3 style="font-family: 'Anton', sans-serif; font-size: 1.8rem; color: #fff; margin: 40px 0 20px; letter-spacing: 1px;">LEADERSHIP PHILOSOPHY:</h3>
+                <ul class="founder-philosophy-list">
+                    <li>Originality over imitation</li>
+                    <li>Vision over validation</li>
+                    <li>Quality over mass production</li>
+                    <li>Culture over noise</li>
+                    <li>Long-term legacy over temporary hype</li>
+                </ul>
+
+                <p>
+                    Through premium oversized silhouettes, modern streetwear storytelling, and elevated fashion direction, Zaylore Studio aims to become a globally recognized premium streetwear house representing ambition, creativity, youth culture, and authentic self-expression.
+                </p>
+
+                <div class="founder-socials">
+                    <a href="https://www.instagram.com/md_waaizz/" target="_blank" rel="noopener noreferrer" class="founder-social-link">Instagram</a>
+                    <a href="https://www.linkedin.com/in/mohd-waaiz/" target="_blank" rel="noopener noreferrer" class="founder-social-link">LinkedIn</a>
+                    <a href="https://www.facebook.com/profile.php?id=100056069555392" target="_blank" rel="noopener noreferrer" class="founder-social-link">Facebook</a>
+                    <a href="https://www.zaylorestudio.in" class="founder-social-link">Official Website</a>
+                </div>
+
+                <div class="premium-cta-wrapper">
+                    <a href="#about-hero" class="premium-cta-btn">The Mind Behind Zaylore Studio</a>
+                </div>
+            </div>
         </div>
     </section>
 
