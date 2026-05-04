@@ -1026,24 +1026,51 @@
         .founder-socials {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 20px;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
         .founder-social-link {
-            color: #777;
+            display: inline-block;
             font-family: 'Space Grotesk', sans-serif;
             font-size: 0.85rem;
-            text-decoration: none;
+            font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
-            transition: color 0.3s ease;
-            border-bottom: 1px solid transparent;
+            color: #fff;
+            background: transparent;
+            padding: 15px 35px;
+            border: 1px solid #d41920;
+            border-radius: 6px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+        .founder-social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: #d41920;
+            z-index: -1;
+            transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
         }
 
         .founder-social-link:hover {
-            color: #d41920;
-            border-bottom-color: #d41920;
+            color: #fff;
+            box-shadow: 0 10px 25px rgba(212, 25, 32, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .founder-social-link:hover::before {
+            width: 100%;
         }
 
         .premium-cta-wrapper {
@@ -1221,40 +1248,31 @@
     <section class="founder-authority-section reveal d2" id="founder-authority" style="padding-top: 60px;">
         <div class="founder-grid">
             <div class="founder-story">
-                <p>
-                    At the core of <strong>Zaylore Studio</strong> is the vision of PM Mohammed Waaiz — a modern founder and creative entrepreneur focused on building a globally influential premium streetwear identity rooted in originality, ambition, and cultural expression.
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #ccc;">
+                    <strong>PM Mohammed Waaiz</strong> founded Zaylore Studio with a singular vision: to create a premium, globally-minded streetwear house that transcends fleeting trends. 
                 </p>
-                <p>
-                    His vision extends beyond fashion products. Zaylore Studio represents individuality, modern youth culture, elevated street aesthetics, oversized fashion, and the emotional connection between identity and self-expression.
-                </p>
-                <p>
-                    Inspired by global urban streetwear culture, modern design philosophy, contemporary fashion, music, art, and digital creativity, PM Mohammed Waaiz founded Zaylore Studio with the ambition of creating a luxury streetwear India label that feels authentic, visionary, and culturally connected.
-                </p>
-                
-                <h3 style="font-family: 'Anton', sans-serif; font-size: 1.8rem; color: #fff; margin: 40px 0 20px; letter-spacing: 1px;">THE BRAND REFLECTS:</h3>
-                <ul class="founder-philosophy-list">
-                    <li>Confidence without arrogance</li>
-                    <li>Creativity without limitation</li>
-                    <li>Individuality without compromise</li>
-                    <li>Luxury with cultural relevance</li>
-                </ul>
-
-                <p>
-                    As Founder & Managing Director, PM Mohammed Waaiz is building Zaylore Studio not as a trend-driven fashion label, but as a long-term creative movement designed to influence modern streetwear culture globally.
+                <p style="font-size: 1.2rem; line-height: 1.8; color: #ccc;">
+                    It’s not just about oversized silhouettes—it’s about cultural expression, uncompromising originality, and youth identity. Under his direction, Zaylore Studio operates as a creative movement designed for those who refuse to blend in.
                 </p>
 
-                <h3 style="font-family: 'Anton', sans-serif; font-size: 1.8rem; color: #fff; margin: 40px 0 20px; letter-spacing: 1px;">LEADERSHIP PHILOSOPHY:</h3>
-                <ul class="founder-philosophy-list">
-                    <li>Originality over imitation</li>
-                    <li>Vision over validation</li>
-                    <li>Quality over mass production</li>
-                    <li>Culture over noise</li>
-                    <li>Long-term legacy over temporary hype</li>
-                </ul>
-
-                <p>
-                    Through premium oversized silhouettes, modern streetwear storytelling, and elevated fashion direction, Zaylore Studio aims to become a globally recognized premium streetwear house representing ambition, creativity, youth culture, and authentic self-expression.
-                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-top: 50px;">
+                    <div>
+                        <h3 style="font-family: 'Anton', sans-serif; font-size: 1.5rem; color: #fff; margin-bottom: 20px; letter-spacing: 1px;">THE BRAND</h3>
+                        <ul class="founder-philosophy-list" style="margin: 0;">
+                            <li>Confidence without arrogance</li>
+                            <li>Individuality without compromise</li>
+                            <li>Luxury with cultural relevance</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="font-family: 'Anton', sans-serif; font-size: 1.5rem; color: #fff; margin-bottom: 20px; letter-spacing: 1px;">THE VISION</h3>
+                        <ul class="founder-philosophy-list" style="margin: 0;">
+                            <li>Originality over imitation</li>
+                            <li>Quality over mass production</li>
+                            <li>Legacy over temporary hype</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="founder-socials">
                     <a href="https://www.instagram.com/md_waaizz/" target="_blank" rel="noopener noreferrer" class="founder-social-link">Instagram</a>
