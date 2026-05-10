@@ -171,31 +171,36 @@
     animate();
 
 
-    // ---- Smooth nav scroll shadow (throttled) ----
+    // ---- Navigation Interactions ----
     const nav = document.getElementById('main-nav');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    
     if (nav) {
-        let lastScrollState = false;
-        let scrollTicking = false;
-
         window.addEventListener('scroll', () => {
-            if (!scrollTicking) {
-                scrollTicking = true;
-                requestAnimationFrame(() => {
-                    const scrolled = window.scrollY > 50;
-                    if (scrolled !== lastScrollState) {
-                        lastScrollState = scrolled;
-                        if (scrolled) {
-                            nav.style.background = 'rgba(10, 10, 10, 0.95)';
-                            nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.5)';
-                        } else {
-                            nav.style.background = 'linear-gradient(to bottom, rgba(10, 10, 10, 0.9) 0%, transparent 100%)';
-                            nav.style.boxShadow = 'none';
-                        }
-                    }
-                    scrollTicking = false;
-                });
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
             }
         }, { passive: true });
+    }
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('open');
+            document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+        });
+
+        // Close menu on link click
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
     }
 
 })();
